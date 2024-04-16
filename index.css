@@ -1,66 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
 }
-
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    place-items: center;
-    background: lightblue;
-    grid-gap: 2em;
+    font-family: 'Montserrat';
 }
-
-.card {
-    background: white;
+.container {
+    padding: 3em 2em;
 }
-span {
-    height: 100px;
+header {
+    position: relative;
     display: block;
     width: 100%;
-    background: #71A6B8;
+}
+header::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('asset1.jpg');
+    background-position: 0% 20%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-p.date {
-    text-align: center;
-    font-size: .7em;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #002A4E;
+}
+p {
+    color: rgba(0,0,0,.3);
+    margin-top: .5em;
+    font-size: .9em;
+    font-weight: bold;
+}
+a {
+    background: #CCCCCC;
+    padding: .8em;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: .8em;
+    border-radius: .4em;
+    margin-top: 1.5em;
+    display: inline-block;
     text-transform: uppercase;
 }
-h3 {
-    margin: 0;
-}
-p.desc {
-    font-size: .9em;
+
+/* Overwrites */
+
+p {
+    color: #002A4E
 }
 
-/* 
-   Use the following properties
-   to fix the alignment and white
-   space issues on the rulesets
-   below this comment.
-   
-   margin, padding, text-align
-   
-*/
-
-body {
-    padding: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.content {
-    padding: 1.5em
-}
-
-p.date {
-    text-align: left;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-p.desc {
-    line-height: 1.5em;
-    margin-bottom:0;
+a {
+    background: #006BC6;
+    color: white;
 }
