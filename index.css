@@ -1,66 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
 }
-body {
-    background: #212527;
-    color: #9FB2B9;
-}
 
 .container {
+    width: 95%;
+    margin: 0 auto;
+}
+h1, p {
+    font-size: 1em;
+}
+h1 {
+    margin: 2em 0 -.2em;
+    font-family: 'Seymour One', sans-serif;
+}
+section {
     display: grid;
-    width: 100%;
-    margin: 2em auto 0;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+    margin-top: 2em;
 }
 .card {
-    background: #337590;
-    display: grid;
-    grid-template-columns: .8fr 5fr;
-    align-items: center;
-    border-radius: 1em;
-    margin-bottom: 2em;
+    background-color: #eeeeee;
+    padding: 1.7em;
 }
-p, h3 {
+blockquote {
     margin: 0;
 }
-h3 {
-    margin-left: 1em;
-    margin-top: .5em
-}
 span {
-    width: 5em;
-    height: 5em;
-    background: #75A2B8;
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: gray;
     border-radius: 50%;
+    margin: 0 auto;
+}
+cite {
+    font-style: normal;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
 }
 
-/* 
-
-   Your fixes below:
-   
-   My solution included using the following properties:  
-   width, background, padding, margin,
-   text-transform, font-size, letter-spacing & color
-   
-*/
-
-.container {
-    color: white;
-    margin: 1em auto;
-    width: 90vw;;
+h1, p, blockquote p, cite {
+    font-family: 'Montserrat';
+}
+h1 {
+    font-size: 2em;
 }
 
-.card {
-    padding: 1em;
-    background-color: #226480;
+blockquote p {
+    line-height: 1.5em;
 }
 
-p.date {
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-left:0;
-    margin-bottom: .3em;
-    margin-top: 0;
+cite {
+    font-size: .7em;
+    font-weight: bold;
+    color: #373737;
 }
