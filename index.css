@@ -5,80 +5,65 @@ html, body {
 }
 
 body {
-    background: #309D67;
-    padding: .4em;
-    font-family: 'Nunito', sans-serif;
-}
-
-.card {
-    background: white;
-    border-radius: 1em;
-    padding: 2.3em;
-    text-align: center;
-}
-
-svg {
-    width: 5em;
-}
-
-h1 {
-    font-size: 1em;
-    font-weight: normal;
-}
-
-.card p {
-    font-size: .85em;
-    color: #474747;
-}
-
-a {
-
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5em;
-    font-size: .8em;
-}
-.obligation {
-    text-align: center;
+    background: #014BCB;
+    display: grid;
+    grid-template-columns: 10% auto;
+    height: 100vh;
     color: white;
-    font-weight: bold;
+    font-family: 'Nunito';
+    grid-gap: .5em;
+}
+sidebar {
+    background: #1D3154;
+}
+.content {
+    background: #6C22FF;
+    padding: .5em;
+    width: 50%;
+    margin-right: 2em;
+    border-radius: .8em;
+}
+h1 {
+    margin-left: 1em;
+    font-size: 1em;
+}
+h3 {
+    margin: 0;
+    font-size: .9em;
+    color: #FF69F5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
     margin-bottom: 0;
 }
+li {
+    margin-bottom: .5em;
+    font-size: .8em;
+}
+span {
+    float: right;
+}
 
-/*
-
-    Your fixes below:
+/*  
+    Your Fixes Below
     
-    Use the following properties and rulesets
-    to improve the visual hierarchy of this
-    design
+    Please keep the same background color
+    and the same sidebar background color.
     
 */
 
 body {
-    padding: 20px;
+    grid-gap: 2em;    /* Improve the white space */
 }
 
-svg {
-    width: 5em;
+.content {
+    background: #A16A0B;  /* Improve the color/contrast */
+    padding: 1.5em;     /* Improve the white space */
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: bold;
+    margin-left: 1em;  /* Improve the alignment */
+    font-size: 1.5rem;   /* Improve the visual hierarchy */
 }
-
-.card p {
-    font-size: auto;
-    line-height: 1.5em;
-    color: #777777;
-}
-
-a {
-    background: #309D67;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-
